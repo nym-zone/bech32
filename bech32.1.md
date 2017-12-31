@@ -177,13 +177,24 @@ Now, decode the address someone gave you:
 
 The
 **bech32**
-utility conforms to Bitcoin
-[BIP 173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki),
-the Bech32 standard.
+utility conforms to:
 
-It also conforms to
-[RFC 4648](https://tools.ietf.org/html/rfc4648)
-for transcoding to Base32.
+*	The Bech32 standard:
+	P. Wuille, G. Maxwell,
+	"Base32 address format for native v0&#8211;16 witness outputs",
+	2016-03-20, Bitcoin
+	[BIP 173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki).
+
+*	S. Josefsson,
+	"The Base16, Base32, and Base64 Data Encodings",
+	2006-10,
+	[RFC 4648](https://tools.ietf.org/html/rfc4648).
+	(For transcoding RFC standard Base32 input data and .onion domains.)
+
+*	J. Appelbaum, A. Muffett,
+	"The '.onion' Special-Use Domain Name",
+	2015-10,
+	[RFC 7686](https://tools.ietf.org/html/rfc7686).
 
 The term
 "**Bravo Charlie Address**"
@@ -243,4 +254,4 @@ High on the author
 At this time, aside from a few simple checks, the utility will happily
 pass the buck to the Bech32 reference functions.
 
-Bitcoin - December 29, 2017
+Bitcoin - December 31, 2017

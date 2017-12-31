@@ -177,13 +177,23 @@ Now, decode the address someone gave you:
   onion1kt50trm0nf4jxkskpcjy74</code></div>
 <div class="D1"><code class="Li">wlupld3ptjvsgwqw.onion</code></div>
 <h1 class="Sh" title="Sh" id="STANDARDS"><a class="selflink" href="#STANDARDS">STANDARDS</a></h1>
-The <b class="Nm" title="Nm">bech32</b> utility conforms to Bitcoin
-  <a class="Lk" title="Lk" href="https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki">BIP
-  173</a>, the Bech32 standard.
-<div class="Pp"></div>
-It also conforms to
-  <a class="Lk" title="Lk" href="https://tools.ietf.org/html/rfc4648">RFC
-  4648</a> for transcoding to Base32.
+The <b class="Nm" title="Nm">bech32</b> utility conforms to:
+<ul class="Bl-bullet">
+  <li class="It-bullet">The Bech32 standard: P. Wuille, G. Maxwell,
+      &#x201C;Base32 address format for native v0&#x2013;16 witness
+      outputs&#x201D;, 2016-03-20, Bitcoin
+      <a class="Lk" title="Lk" href="https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki">BIP
+      173</a>.</li>
+  <li class="It-bullet">S. Josefsson, &#x201C;The Base16, Base32, and Base64
+      Data Encodings&#x201D;, 2006-10,
+      <a class="Lk" title="Lk" href="https://tools.ietf.org/html/rfc4648">RFC
+      4648</a>. (For transcoding RFC standard Base32 input data and .onion
+      domains.)</li>
+  <li class="It-bullet">J. Appelbaum, A. Muffett, &#x201C;The
+      &#x2018;.onion&#x2019; Special-Use Domain Name&#x201D;, 2015-10,
+      <a class="Lk" title="Lk" href="https://tools.ietf.org/html/rfc7686">RFC
+      7686</a>.</li>
+</ul>
 <div class="Pp"></div>
 The term &#x201C;<b class="Sy" title="Sy">Bravo Charlie Address</b>&#x201D; and
   the motto &#x201C;<b class="Sy" title="Sy">Bravo Charlie One means
@@ -229,7 +239,7 @@ This is an early release, which should be considered alpha-quality software. It
   utility will happily pass the buck to the Bech32 reference functions.</div>
 <table class="foot">
   <tr>
-    <td class="foot-date">December 29, 2017</td>
+    <td class="foot-date">December 31, 2017</td>
     <td class="foot-os">Bitcoin</td>
   </tr>
 </table>

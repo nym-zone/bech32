@@ -39,7 +39,7 @@
 .\" OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 .\" SUCH DAMAGE.
 .\"
-.Dd December 29, 2017
+.Dd December 31, 2017
 .Dt BECH32 1
 .Os Bitcoin
 .Sh NAME
@@ -195,13 +195,26 @@ Now, decode the address someone gave you:
 .Sh STANDARDS
 The
 .Nm
-utility conforms to Bitcoin
-.Lk https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki "BIP 173" ,
-the Bech32 standard.
-.Pp
-It also conforms to
-.Lk https://tools.ietf.org/html/rfc4648 "RFC 4648"
-for transcoding to Base32.
+utility conforms to:
+.Bl -bullet
+.It
+The Bech32 standard:
+P. Wuille, G. Maxwell,
+.Dq "Base32 address format for native v0\(en16 witness outputs" ,
+2016-03-20, Bitcoin
+.Lk https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki "BIP 173" .
+.It
+S. Josefsson,
+.Dq "The Base16, Base32, and Base64 Data Encodings" ,
+2006-10,
+.Lk https://tools.ietf.org/html/rfc4648 "RFC 4648" .
+.Pq "For transcoding RFC standard Base32 input data and .onion domains."
+.It
+J. Appelbaum, A. Muffett,
+.Do "The" So .onion Sc "Special-Use Domain Name" Dc ,
+2015-10,
+.Lk https://tools.ietf.org/html/rfc7686 "RFC 7686" .
+.El
 .Pp
 The term
 .Dq Sy "Bravo Charlie Address"
